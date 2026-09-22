@@ -45,14 +45,16 @@ export const CertificateSection = () => {
     },
     {
       id: 5,
-      title: "LCCE: LINK Certified Network Cabling for Engineering",
-      issuer: "LINK (Interlink) Training Workshop",
-      date: "Training Workshop",
-      credentialId: "—",
+      title: "LCCE: LINK® Certified NETWORK CABLING for Engineering",
+      issuer: "LINK ASIA LIMITED (Interlink)",
+      date: "8 ก.ค. 2569",
+      validUntil: "8 ก.ค. 2572",
+      credentialId: "080726-LCCE 202610455-01",
       category: "Network Engineering",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop",
-      description: "Hands-on training workshop in structured network cabling for engineering: copper and fibre termination, patch panel and rack build-out, cable management standards, and certification testing of installed links.",
-      skills: ["Structured Cabling", "Fibre & Copper Termination", "Patch Panel Build", "Link Certification Testing", "Cable Standards"],
+      image: "/interlink.png",
+      fit: "contain",
+      description: "Certificate of Attendance จาก LINK ASIA LIMITED หลักสูตร LINK® Certified NETWORK CABLING for Engineering (LCCE) อบรมเชิงปฏิบัติการด้านระบบสายสัญญาณแบบโครงสร้าง (Structured Cabling) ครอบคลุมการเข้าหัวสายทองแดงและสายไฟเบอร์ การเข้าหัว Patch Panel และจัดเก็บสายในตู้ Rack ตามมาตรฐาน American Standard ตลอดจนการทดสอบและรับรองคุณภาพลิงก์ (Link Certification Testing) ออกให้เมื่อวันที่ 8 กรกฎาคม 2569 มีอายุรับรองถึงวันที่ 8 กรกฎาคม 2572",
+      skills: ["Structured Cabling", "Fibre & Copper Termination", "Patch Panel Build", "Rack & Cable Management", "Link Certification Testing"],
       verified: true
     }
   ];
@@ -191,6 +193,15 @@ export const CertificateSection = () => {
                   {selectedCert.credentialId}
                 </span>
               </div>
+              {selectedCert.validUntil && (
+                <div className="col-span-2 sm:col-span-3 pt-3 border-t border-white/5">
+                  <span className="text-[#9e9e9e] block text-[10px]">VALID UNTIL:</span>
+                  <span className="text-white font-semibold flex items-center gap-1 mt-0.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#4d44b5]" />
+                    {selectedCert.validUntil}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Narrative Description (As required by portfolio.md line 51) */}
