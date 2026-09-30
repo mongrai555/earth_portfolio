@@ -5,6 +5,19 @@ import { Button } from './ui/button';
 export const CertificateSection = () => {
   const certificates = [
     {
+      id: 8,
+      title: "ประกาศนียบัตรหลักสูตร YOU by True & Gemini Academy",
+      issuer: "Google Gemini ร่วมกับ YOU by True (บริษัท ทรู คอร์ปอเรชั่น จำกัด (มหาชน))",
+      date: "30 ก.ย. 2569",
+      credentialId: "FG1Q1X2026003151",
+      category: "AI & Generative AI",
+      image: "/gemini_you_by_true.png",
+      fit: "contain",
+      description: "ประกาศนียบัตรรับรองการผ่านการอบรมและสำเร็จหลักสูตร YOU by True & Gemini Academy จัดโดย Google Gemini ร่วมกับ YOU by True ครอบคลุมการใช้งาน Generative AI ในชีวิตประจำวันและการเรียน การเขียน Prompt ให้ได้ผลลัพธ์ที่แม่นยำ การสรุปและวิเคราะห์ข้อมูล การสร้างสรรค์คอนเทนต์ ตลอดจนแนวทางการใช้ AI อย่างมีจริยธรรมและปลอดภัย ออกให้เมื่อวันที่ 30 กันยายน 2569",
+      skills: ["Generative AI", "Google Gemini", "Prompt Engineering", "AI Content Creation", "Responsible AI"],
+      verified: true
+    },
+    {
       id: 1,
       title: "ความมั่นคงปลอดภัยไซเบอร์ ระดับพื้นฐาน (Cybersecurity Foundation Course)",
       issuer: "สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ (NCSA)",
@@ -74,7 +87,7 @@ export const CertificateSection = () => {
             Certificates & Accomplishments
           </h2>
           <p className="text-[#9e9e9e] text-sm sm:text-base mt-1">
-            Credentials in cybersecurity, network cabling engineering, and university event organizing at Maejo University.
+            Credentials in generative AI, cybersecurity, network cabling engineering, and university event organizing at Maejo University.
           </p>
         </div>
         <div className="text-xs font-mono text-[#9e9e9e] bg-[#14161f] px-4 py-2 rounded-xl border border-white/10 flex items-center gap-2">
